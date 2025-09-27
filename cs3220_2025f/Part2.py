@@ -186,7 +186,8 @@ with tab1:
     plt.show()
 with tab2:
     st.header("Members of Houses")
-    print(house + "Our Members:")
+    print(house)
+    print("Our Members:")
     for person in house:
         print(person)
     print(f"Strength: {house.getStrength()}")
