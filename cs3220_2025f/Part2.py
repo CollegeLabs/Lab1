@@ -175,7 +175,7 @@ for node in GameOfThronesNet.nodes:
                     node["color"] = '#%02x%02x%02x' % nodeColors[house.name]
 
 GameOfThronesNet.save_graph("GoT_graph.html")
-HtmlFile = open("GoT_graph.html, 'r', encoding='utf-8')
+HtmlFile = open("GoT_graph.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
 
 #GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
