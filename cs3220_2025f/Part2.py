@@ -187,7 +187,7 @@ with tab1:
     for house in GameOfThronesHouses:
         st.write(house)
         st.write(f": Strength: {house.getStrength()}")
-    st.pyplot(ax)
+    st.pyplot(test)
 with tab2:
     st.header("Members of Houses")
     for house in GameOfThronesHouses:
