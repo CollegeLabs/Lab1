@@ -183,7 +183,7 @@ with tab1:
     for house in GameOfThronesHouses:
         st.write(house)
         st.write(f": Strength: {house.getStrength()}")
-    st.write(plt.show())
+    plt.show()
 with tab2:
     st.header("Members of Houses")
     for house in GameOfThronesHouses:
@@ -194,4 +194,4 @@ with tab2:
         st.write(f"Strength: {house.getStrength()}")
 with tab3:
     st.header("Graph for Game of Thrones Houses")
-    st.write(GameOfThronesNet.show("GameOfThronesNet.html", notebook=False))
+    GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
