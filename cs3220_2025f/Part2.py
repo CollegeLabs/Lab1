@@ -191,7 +191,7 @@ with tab2:
         st.write("Our Members:")
         for person in house:
             st.write(person)
-    st.write(f"Strength: {house.getStrength()}")
+        st.write(f"Strength: {house.getStrength()}")
 with tab3:
     st.header("Graph for Game of Thrones Houses")
     st.write(GameOfThronesNet.show("GameOfThronesNet.html", notebook=False))
