@@ -186,10 +186,11 @@ with tab1:
     st.write(plt.show())
 with tab2:
     st.header("Members of Houses")
-    st.write(house)
-    st.write("Our Members:")
-    for person in house:
-        st.write(person)
+    for house in GameOfThronesHouses:
+        st.write(house)
+        st.write("Our Members:")
+        for person in house:
+            st.write(person)
     st.write(f"Strength: {house.getStrength()}")
 with tab3:
     st.header("Graph for Game of Thrones Houses")
