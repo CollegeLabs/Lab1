@@ -174,6 +174,10 @@ for node in GameOfThronesNet.nodes:
                 if node["id"] in house:
                     node["color"] = '#%02x%02x%02x' % nodeColors[house.name]
 
+GameOfThronesNet.save_graph("GoT_graph.html")
+HtmlFile = open("GoT_graph.html, 'r', encoding="utf-8")
+source_code = HtmlFile.read()
+
 #GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
 
 tab1, tab2, tab3 = st.tabs(["Game of Thrones Houses", "Members of Houses", "Graph for Game of Thrones Houses"])
@@ -183,7 +187,7 @@ with tab1:
     for house in GameOfThronesHouses:
         st.write(house)
         st.write(f": Strength: {house.getStrength()}")
-    plt.show()
+    st.pyplot()
 with tab2:
     st.header("Members of Houses")
     for house in GameOfThronesHouses:
@@ -194,4 +198,4 @@ with tab2:
         st.write(f"Strength: {house.getStrength()}")
 with tab3:
     st.header("Graph for Game of Thrones Houses")
-    GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
+    st.components.v1.html(source_code, height=800)
