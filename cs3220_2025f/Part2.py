@@ -107,7 +107,7 @@ y=list(visualisationData.values())
 
 #Create the graph = create seaborn barplot
 ax=sns.barplot(x=x,y=y)
-
+test = plt.subplots()
 #specfiy axis labels
 ax.legend(legendData)
 sns.move_legend(ax, "upper left", bbox_to_anchor=(1.05, 1))
