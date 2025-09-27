@@ -181,7 +181,8 @@ with tab1:
     st.header("Game of Thrones Houses")
     st.write("Game of Thrones Houses: ")
     for house in GameOfThronesHouses:
-        print(house + ": Strength: " + house.getStrength())
+        print(house)
+        print(f": Strength: {house.getStrength()}")
     plt.show()
 with tab2:
     st.header("Members of Houses")
