@@ -107,7 +107,7 @@ y=list(visualisationData.values())
 
 #Create the graph = create seaborn barplot
 ax=sns.barplot(x=x,y=y)
-test = plt.subplots()
+
 #specfiy axis labels
 ax.legend(legendData)
 sns.move_legend(ax, "upper left", bbox_to_anchor=(1.05, 1))
@@ -187,7 +187,7 @@ with tab1:
     for house in GameOfThronesHouses:
         st.write(house)
         st.write(f": Strength: {house.getStrength()}")
-    st.pyplot(test)
+    st.pyplot()
 with tab2:
     st.header("Members of Houses")
     for house in GameOfThronesHouses:
