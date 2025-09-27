@@ -176,21 +176,21 @@ for node in GameOfThronesNet.nodes:
 
 #GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
 
-tab1, tab2, tab3 = st.tabs(["Tab 1", "Tab 2", "Tab 3"])
+tab1, tab2, tab3 = st.tabs(["Game of Thrones Houses", "Members of Houses", "Graph for Game of Thrones Houses"])
 with tab1:
     st.header("Game of Thrones Houses")
     st.write("Game of Thrones Houses: ")
     for house in GameOfThronesHouses:
-        print(house)
-        print(f": Strength: {house.getStrength()}")
+        st.write(house)
+        st.write(f": Strength: {house.getStrength()}")
     plt.show()
 with tab2:
     st.header("Members of Houses")
-    print(house)
-    print("Our Members:")
+    st.write(house)
+    st.write("Our Members:")
     for person in house:
-        print(person)
-    print(f"Strength: {house.getStrength()}")
+        st.write(person)
+    st.write(f"Strength: {house.getStrength()}")
 with tab3:
     st.header("Graph for Game of Thrones Houses")
-    GameOfThronesNet.show("GameOfThronesNet.html", notebook=False)
+    st.write(GameOfThronesNet.show("GameOfThronesNet.html", notebook=False))
