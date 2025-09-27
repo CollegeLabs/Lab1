@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import networkx as nx
 from pyvis.network import Network
-
+"""
 path = 'data'
 
 json_files = [os.path.join(root, name) 
@@ -19,6 +19,10 @@ json_files
 print('Path to the first file: '+json_files[0])
 with (open(json_files[0]) as f):
     json_data = json.load(f)
+"""
+file_path = 'cs3220_2025f/data/game-of-thrones-characters-groups.json'
+with open(file_path, 'r') as file:
+    json_data=json.load(file)
 
 class Dynasty:
     def __init__(self,name):
